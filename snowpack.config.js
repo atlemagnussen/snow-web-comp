@@ -3,7 +3,11 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-    // mount: {},
+    mount: {
+        // directory name: 'build directory'
+        public: '/',
+        src: '/dist'
+    },
     // plugins: [],
     installOptions: {
         dest: "web_modules"
